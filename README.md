@@ -11,6 +11,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Done by](#done-by)
 
 ### The challenge
 
@@ -20,8 +21,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-<!-- <div> <img src="" /></div>
-<div> <img src="" /></div> -->
+<div display= 'flex'> 
+<img src="https://i.ibb.co/Npth8mP/screencapture-192-168-1-11-5501-index-html-2022-04-13-15-55-32.png" width='150' height='280' /></div>
+<div> <img src="https://i.ibb.co/gShNh8s/screencapture-192-168-1-11-5500-index-html-2022-04-14-00-42-11.png" alt="screencapture-192-168-1-11-5500-index-html-2022-04-14-00-42-11" /></div>
 
 ### Links
 
@@ -40,3 +42,7 @@ I learned how to use CSS flexbox and make the design responsive.
 
 ### Continued development
 I will keep using flexbox along with CSS grid.
+
+### Done by [Shams Elkhoudary](https://github.com/shamskhodary)
+#### Ninjas-T :ninja: 
+
