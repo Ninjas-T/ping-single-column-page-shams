@@ -1,45 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Alef&family=Asul&family=Catamaran:wght@200&family=Libre+Franklin&family=Montserrat:wght@100;400&family=Outfit:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Roboto&family=Smooch+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
+    transition: all .1s ease-in-out;
 }
 
 :root {
     --pale-blue: hsl(223, 100%, 88%);
     --royal-blue: hsl(223, 87%, 63%);
     --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
 }
 
 body {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     overflow: hidden;
 }
 
 /*MAIN STYLING STARTS*/
 main {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 
 main img {
-    margin: 2rem;
+    margin: 1rem;
+    width: 3.5rem;
 }
 
-main h1,
-p {
-    margin: 0 0 1.5rem 0;
-}
-
-h1 {
+main h1 {
+    margin: 0 0 0.9rem 0;
     width: 100%;
     font-size: 1.5rem
 }
@@ -55,11 +56,20 @@ main p {
 }
 
 /*FORM STYLING STARTS*/
-form input {
-    outline: none;
-    display: inline-block;
+
+main form {
     width: 100%;
-    padding: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    outline: 1px solid var(--pale-blue);
+    padding: 0.8rem 1rem;
     border: 1px solid var(--pale-blue);
     border-radius: 50px;
 }
@@ -68,8 +78,7 @@ input::placeholder {
     color: var(--pale-blue);
 }
 
-form a {
-    display: inline-block;
+form button {
     width: 100%;
     text-decoration: none;
     text-transform: capitalize;
@@ -83,27 +92,43 @@ form a {
     cursor: pointer;
 }
 
-form a:hover {
+form button:hover {
     opacity: 0.6;
 }
-
 /*FORM STYLING ENDS*/
 
 .dash {
-    width: 100%;
-    display: block;
+    width: 18rem;
 }
 
 /*FOOTER STYLING STARTS*/
 footer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
+    justify-content: center;
+    margin: 1.5rem;
 }
 
 footer a {
+    padding: 0 1rem;
+}
+
+footer i {
+    font-size: 1.1rem;
+    outline: 1px solid var(--pale-blue);
+    border-radius: 50%;
     color: var(--royal-blue);
+    padding: 0.5rem;
+}
+
+footer i:hover {
+    background-color: var(--royal-blue);
+    color: #fff;
+}
+
+
+main .copyright {
+    color: var(--gray);
 }
 
 /*FOOTER STYLING ENDS*/
@@ -111,4 +136,88 @@ footer a {
 
 /*MEDIA QUERIES START*/
 
+/*medium screen tablet*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size:25px;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    main form {
+        width: 70%;
+        font-size: 16px;
+    }
+}
+
+/*large screen laptop*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+        font-size:27px;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    main form {
+        font-size: 16px;
+    }
+
+    form button {
+        width: 20%;
+        margin: 0 0.5rem;
+    }
+
+    form input {
+        width: 40%;
+    }
+
+}
+
+/*X large screen*/
+@media (min-width: 1200px) {
+    html {
+        font-size:35px;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    form button {
+        width: 20%;
+        margin: 0 0.5rem;
+    }
+
+    form input {
+        width: 40%;
+    }
+}
 /*MEDIA QUERIES END*/
