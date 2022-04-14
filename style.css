@@ -52,7 +52,7 @@ main span {
 
 main p {
     width: 100%;
-    font-size: 0.8px;
+    font-size: 0.8rem;
 }
 
 /*FORM STYLING STARTS*/
@@ -69,7 +69,7 @@ main form {
 form input {
     width: 100%;
     outline: 1px solid var(--pale-blue);
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     border: 1px solid var(--pale-blue);
     border-radius: 50px;
 }
@@ -82,7 +82,7 @@ form button {
     width: 100%;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     background-color: var(--royal-blue);
     color: white;
     border: none;
@@ -98,7 +98,7 @@ form button:hover {
 /*FORM STYLING ENDS*/
 
 .dash {
-    width: 18rem;
+    width: 100%;
 }
 
 /*FOOTER STYLING STARTS*/
@@ -129,7 +129,7 @@ footer i:hover {
 
 main .copyright {
     color: var(--gray);
-    font-size: 0.7rem
+    font-size: 0.5rem
 }
 
 /*FOOTER STYLING ENDS*/
@@ -185,7 +185,7 @@ main .copyright {
     }
 
     footer i {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     main .copyright {
@@ -201,6 +201,7 @@ main .copyright {
     }
 
     main {
+        width: 100%;
         height: 100vh;
         padding: 1rem 0;
     }
@@ -220,7 +221,7 @@ main .copyright {
     }
 
     .dash {
-        width: 12rem;
+        width: 50%;
     }
 
     main form {
@@ -234,7 +235,7 @@ main .copyright {
     }
 
     form input {
-        width: 40%;
+        width: 35%;
     }
 
     footer {
@@ -242,7 +243,7 @@ main .copyright {
     }
 
     footer i {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     main .copyright {
@@ -266,6 +267,7 @@ main .copyright {
         width: 90%;
         height: 100vh;
     }
+    
 
     main h1 {
         font-size: 0.9rem
@@ -276,7 +278,7 @@ main .copyright {
     }
 
     .dash {
-        width: 15rem;
+        width: 50%;
     }
 
     main form {
@@ -302,8 +304,8 @@ main .copyright {
     }
 
     footer i {
-        font-size: 0.8rem;
-        padding: 0.5rem;
+        font-size: 0.5rem;
+        padding: 0.4rem;
     }
 }
 /*MEDIA QUERIES END*/
